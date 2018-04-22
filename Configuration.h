@@ -94,7 +94,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(Chip Luck, HICTOP i3 Mendel v1.1.03-RC4)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Kkuwata.ee 4/22)" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 STRING_DISTRIBUTION_DATE // will be shown during bootup in line 2
@@ -125,7 +125,7 @@
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message, NOTE: MAXIMUM 13 CHARACTERS including spaces
 //#define CUSTOM_MACHINE_NAME "3D Printer"
-#define CUSTOM_MACHINE_NAME "HICi3 v1.1RC4"  // CL: HIC i3, v1.1.03-RC4 Bug-Fix
+#define CUSTOM_MACHINE_NAME "kkuwata 4/22"  // CL: HIC i3, v1.1.03-RC4 Bug-Fix
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -574,8 +574,8 @@ const bool FIL_RUNOUT_INVERTING = true;  // Should be uncommented and true or fa
 
 #define LEFT_PROBE_BED_POSITION 50
 #define RIGHT_PROBE_BED_POSITION 150
-#define FRONT_PROBE_BED_POSITION 100
-#define BACK_PROBE_BED_POSITION 126
+#define FRONT_PROBE_BED_POSITION 75
+#define BACK_PROBE_BED_POSITION 200
 
 #define MIN_PROBE_EDGE 10 // The Z probe minimum square sides can be no smaller than this.
 
@@ -760,8 +760,8 @@ const bool FIL_RUNOUT_INVERTING = true;  // Should be uncommented and true or fa
 // @section temperature
 
 // Preheat Constants
-#define PLA_PREHEAT_HOTEND_TEMP 205  // CL: too low for current PLA, was=180
-#define PLA_PREHEAT_HPB_TEMP 60   // CL: too high for current PLA, was=70
+#define PLA_PREHEAT_HOTEND_TEMP 215  // CL: too low for current PLA, was=180
+#define PLA_PREHEAT_HPB_TEMP 85   // CL: too high for current PLA, was=70
 #define PLA_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
 #define ABS_PREHEAT_HOTEND_TEMP 240
