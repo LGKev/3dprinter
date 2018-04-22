@@ -574,7 +574,7 @@ const bool FIL_RUNOUT_INVERTING = true;  // Should be uncommented and true or fa
 
 #define LEFT_PROBE_BED_POSITION 50
 #define RIGHT_PROBE_BED_POSITION 150
-#define FRONT_PROBE_BED_POSITION 26
+#define FRONT_PROBE_BED_POSITION 100
 #define BACK_PROBE_BED_POSITION 126
 
 #define MIN_PROBE_EDGE 10 // The Z probe minimum square sides can be no smaller than this.
@@ -619,9 +619,9 @@ const bool FIL_RUNOUT_INVERTING = true;  // Should be uncommented and true or fa
 
 #define XY_TRAVEL_SPEED 4000         // X and Y axis travel speed between probes, in mm/min.
 
-#define Z_RAISE_BEFORE_PROBING 3   // How much the Z axis will be raised before traveling to the first probing point.
-#define Z_RAISE_BETWEEN_PROBINGS 3  // How much the Z axis will be raised when traveling from between next probing points.
-#define Z_RAISE_AFTER_PROBING 3    // How much the Z axis will be raised after the last probing point.
+#define Z_RAISE_BEFORE_PROBING 5   // How much the Z axis will be raised before traveling to the first probing point.
+#define Z_RAISE_BETWEEN_PROBINGS 5  // How much the Z axis will be raised when traveling from between next probing points.
+#define Z_RAISE_AFTER_PROBING 5    // How much the Z axis will be raised after the last probing point.
 
 //#define Z_PROBE_END_SCRIPT "G1 Z10 F12000\nG1 X15 Y330\nG1 Z0.5\nG1 Z10" // These commands will be executed in the end of G29 routine.
 // Useful to retract a deployable Z probe.
