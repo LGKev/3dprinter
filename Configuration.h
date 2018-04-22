@@ -613,8 +613,8 @@ const bool FIL_RUNOUT_INVERTING = true;  // Should be uncommented and true or fa
 //    |           |
 //    O-- FRONT --+
 //  (0,0)
-#define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  [of the nozzle] +right
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -10  // Y offset: -front [of the nozzle] +behind
+#define X_PROBE_OFFSET_FROM_EXTRUDER -8  // X offset: -left  [of the nozzle] +right
+#define Y_PROBE_OFFSET_FROM_EXTRUDER +69  // Y offset: -front [of the nozzle] +behind
 #define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below [the nozzle] (always negative!)
 
 #define XY_TRAVEL_SPEED 4000         // X and Y axis travel speed between probes, in mm/min.
@@ -632,7 +632,7 @@ const bool FIL_RUNOUT_INVERTING = true;  // Should be uncommented and true or fa
 
 // A fix mounted probe, like the normal inductive probe, must be deactivated to go below Z_PROBE_OFFSET_FROM_EXTRUDER
 // when the hardware endstops are active.
-//#define FIX_MOUNTED_PROBE
+#define FIX_MOUNTED_PROBE
 
 // A Servo Probe can be defined in the servo section below.
 
